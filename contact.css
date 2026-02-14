@@ -40,6 +40,7 @@ a{
     background-color: rgb(87, 87, 214);
 
 }
+
 .box{
     width: 200px;
     height: 100px;
@@ -51,6 +52,9 @@ a{
     box-shadow: 0 0 0 rbga( 0,0,0,0.5);
     transition: box 0.3s ease;
     border-radius: 10px;
+}
+.email{
+    font-size: large;
 }
 .box:hover{
     box-shadow: 10px 10px 20px rgba( 0,0,0,0.5);

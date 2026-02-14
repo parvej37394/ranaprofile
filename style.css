@@ -1,3 +1,4 @@
+
 *{
     
     margin: 0 ;
@@ -100,7 +101,7 @@ nav .navlinks li a{
 }
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
 
@@ -110,7 +111,7 @@ nav .navlinks li a{
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 15px solid #444;
+    border: 15px solid #797777;
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
 
 }
@@ -130,20 +131,29 @@ nav .navlinks li a{
 }
 .hero-text h5{
     color: #e5e5e5;
-    font-size: 10px;
+    font-size: 15px;
+
+}
+.hero-text h5 span{
+    color: #3d1b8d;
+    font-size: 17px;
 
 }
 .hero-text h1{
-    color: #c9cad1;
+    color: #21072e;
     font-size: 3rem;
 
 }
 .hero-text p{
-    color:#78d166;
+    color:#dde4db;
 
 }
 .btn-group{
-    margin:45px 0;
+    /*margin:45px 0;*/
+    gap: 15px;
+    margin-top:20px;
+
+    display: flex;
 
 }
 .btn-group .btn{
@@ -151,12 +161,18 @@ nav .navlinks li a{
     color:#fff;
     background-color: #333;
     padding: 12px 25px;
-    margin:5px 0;
+    /*margin:5px 0;
+   
+    margin-right: 7px;*/
     border-radius: 30px;
     border:2px solid #e5e5e5;
-    box-shadow: 0 10px 10px -8px rgba(0 0 0 / 78%);
+    box-shadow: 0 10px 10px -8px rgba(0,0,0,0.5);
+    text-decoration: none;
 }
-.btn-group.btn.active{
+.btn.active{
+    border-color: #007ced;
+}
+.btn-group .btn.active{
     border-color:#007ced;
     
 
@@ -165,8 +181,21 @@ nav .navlinks li a{
     background-color: #007ced;
     color:black;
     font-style: italic;
-    border:2px solid pink;
+    border:2px solid rgb(144, 199, 72);
 }
+.hero-text .social i{
+    color:#e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+
+}
+.hero-text .socila i:hover{
+    color:#007ced;
+    transform:rotate(360deg)
+
+}
+/* reposetary design display in small screen */
 
 @media(max-width:930px)
 {
@@ -198,7 +227,7 @@ nav .navlinks li a{
     nav .navlinks{
         position:absolute;
         top:110px;
-        right: 0;
+        right: -100%;
         bottom:0;
         height: 100vh;
         width: 60%;
@@ -208,21 +237,156 @@ nav .navlinks li a{
         transition: 0.5s;
         padding: 25px 0px;
     }
-    nav .navlink li{
+    nav .navlinks li{
         display: block;
 
     }
-    nav .navlink li a{
+    nav .navlinks li a{
         display: block;
         margin-bottom: 15px;
         text-align: center;
 
     }
-    nav.navlink.open{
+    nav .navlinks.open{
         right: 0;
 
     }
     
 }
+@media(max-width:768px)
+{
+    .container{
+        display: column;
+        padding-top: 2rem;
 
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}
+
+/* button stracture All btn */
+.button-design{
+    height: 110px;
+    width: 250px;
+    background-color: #6666;
+    color:#78d166;
+    border-radius: 15px;
+    border:2px solid green;
+    box-shadow: 2px 3px 2px rgba(#f3f0f0);
     
+
+}
+.button-design:hover{
+    background-color: #6669;
+    border:2px solid yellow;
+}
+
+.button-btn-dg1{
+    background-color: #1f2b36;
+    margin:5px;
+    border: 1.2px solid rgb(129, 228, 129);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg1:hover{
+    background-color: #344758;
+    border: 1.2px solid rgb(147, 240, 147);
+
+
+}
+.button-btn-dg2{
+    background-color: #6e1ace;
+    margin:5px;
+    border: 1.2px solid rgb(122, 136, 122);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg2:hover{
+    background-color: #530b69;
+    border: 1.2px solid rgb(178, 190, 178);
+    
+
+}
+.button-btn-dg3{
+    background-color: #107fb3;
+    margin:5px;
+    border: 1.2px solid rgb(47, 80, 47);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg3:hover{
+    background-color: #0b1a27;
+    border: 1.2px solid rgb(124, 196, 124);
+    
+
+}
+.button-btn-dg4{
+    background-color: #f19123;
+    margin:5px;
+    border: 1.2px solid rgb(110, 151, 55);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg4:hover{
+    background-color: #9cc018;
+    border: 1.2px solid rgb(251, 255, 0);
+    
+
+}
+.button-btn-dg5{
+    background-color: #ca7350;
+    margin:5px;
+    border: 1.2px solid rgb(228, 205, 129);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg5:hover{
+    background-color: #f1366e;
+    border: 1.2px solid rgb(145, 28, 110);
+    
+
+}
+.button-btn-dg6{
+    background-color: #2f3942;
+    margin:5px;
+    border: 1.2px solid rgb(51, 63, 179);
+    height: 25px;
+    width: 109px;
+    border-radius: 15px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-style: oblique;
+}
+.button-btn-dg6:hover{
+    background-color: #3189d6;
+    border: 1.2px solid rgb(50, 192, 180);
+    
+
+}
